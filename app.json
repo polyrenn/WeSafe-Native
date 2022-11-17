@@ -4,11 +4,11 @@
     "slug": "WeSafe",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/adaptive-iconx.png",
     "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/splashx.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,13 +22,22 @@
       "supportsTablet": true
     },
     "android": {
+      "userInterfaceStyle": "light",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-iconx.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      
+      "package": "com.polyrenn.WeSafe"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ad385eb0-c56e-43ca-b133-424a47593d0b"
+      }
+    },
+    "plugins": ["@react-native-google-signin/google-signin", "@react-native-firebase/app", "@react-native-firebase/auth"]
   }
 }
